@@ -1,0 +1,341 @@
+{
+  "_inherit": true,
+  "_variables": {
+    "@TitleSize": "16px",
+    "@SubtitleSize": "15px",
+    "@TextSize": "12px",
+    "@FooterSize": "10px",
+    "@TitleColor": "#000050",
+    "@SubtitleColor": "#45557b",
+    "@TextColor": "rgb(0,0,80)",
+    "@FooterColor": "rgb(0,0,80)",
+    "@BackgroundColor": "#ffffff000",
+    "@AxisMajorColor": "#353e63",
+    "@AxisMinorColor": "#5968a5",
+    "@ColourWLRed": "#E30014",
+    "@ColourWLBlue": "#000050",
+    "@ColourWLRedLight": "#f8c6c8",
+    "@ColourWLRedMid":"#e24848",
+    "@ColourWLBlueLight" : "#45557b",
+    "@ColourWLWhite" : "#FFFFFF",
+    "@ColourWLBlack" : "#000000",
+    "@AvenirLtLight" : "Avenir LT W01_35 Light1475496"
+  },
+  "customStyles": [
+    {
+      "cssRef": "theme.css",
+      "classRef": "sense-theme"
+    }
+  ],
+  "fontFamily": "@AvenirLtLight",
+  "color": "@TextColor",
+  "fontSize": "@TextSize",
+  "backgroundColor": "@BackgroundColor",
+  "dataColors": {
+    "primaryColor": "#232942",
+    "othersColor": "#bcc2db",
+    "errorColor": "#CC4000",
+    "nullColor": "#CCCCCC"
+  },
+  "sheet": {
+    "title": {
+      "color": "@ColourWLWhite",
+      "private":{
+        "titleBackgroundColor":"@ColourWLWhite",
+        "titleBackgroundGradientColor":"@ColourWLRedMid",
+        "color": "@ColourWLBlack"
+    },
+      "approved":{
+        "titleBackgroundColor":"@ColourWLWhite",
+        "titleBackgroundGradientColor":"@ColourWLRedMid",
+        "color": "@ColourWLBlack"
+    },
+      "published":{
+        "titleBackgroundColor":"@ColourWLWhite",
+        "titleBackgroundGradientColor":"@ColourWLRed",
+        "color": "@ColourWLBlack"
+    }
+  }
+ }	,
+  "object": {
+    "title": {
+      "main": {
+        "fontFamily": "@AvenirLtLight",
+        "color": "@TitleColor",
+        "fontSize": "@TitleSize"
+      },
+      "subTitle": {
+        "color": "@SubtitleColor",
+        "fontSize": "@SubtitleSize",
+        "fontFamily": "@AvenirLtLight"
+      },
+      "footer": {
+        "color": "@FooterColor",
+        "fontSize": "@FooterSize",
+        "backgroundColor": "@ColourWLWhite",
+        "fontFamily": "@AvenirLtLight"
+      },
+      "textImage": {
+
+            "title": {
+                "main": {
+                    "color": "@ColourWLRed",
+                    "fontSize": "@TextSize",
+                    "fontFamily": "@AvenirLtLight"
+                },
+                "subTitle": {
+                    "color": "@ColourWLRed",
+      
+                    "fontFamily": "@AvenirLtLight"
+                },
+                "footer": {
+                    "color": "@FooterColor",
+  
+                    "fontFamily": "@AvenirLtLight",
+                    "backgroundColor": "@ColourWLWhite"
+                }
+            }
+        }
+    },
+    "label": {
+      "name": {
+        "color": "@TextColor",
+        "fontSize": "@TextSize",
+        "fontFamily": "@AvenirLtLight"
+      },
+      "value": {
+        "color": "@TextColor",
+        "fontSize": "@TextSize",
+        "fontFamily": "@AvenirLtLight"
+      }
+    },
+    "axis": {
+      "title": {
+        "color": "@TextColor",
+        "fontSize": "@TextSize",
+        "fontFamily": "@AvenirLtLight"
+      },
+      "label": {
+        "name": {
+          "color": "@TextColor",
+          "fontSize": "@TextSize",
+          "fontFamily": "@AvenirLtLight"
+        }
+      },
+      "line": {
+        "major": {
+          "color": "#232942"
+        },
+        "minor": {
+          "color": "#bcc2db"
+        }
+      }
+    },
+    "grid": {
+      "line": {
+        "highContrast": {
+          "color": "#eeeeee"
+        },
+        "major": {
+          "color": "#eeeeee"
+        },
+        "minor": {
+          "color": "#eeeeee"
+        }
+      }
+    },
+    "referenceLine": {
+      "label": {
+        "name": {
+          "color": "@TextColor",
+          "fontSize": "@TextSize",
+          "fontFamily": "@AvenirLtLight"
+        }
+      },
+      "outOfBounds": {
+        "color": "@TextColor",
+        "backgroundColor": "#ffffff",
+        "fontSize": "@TextSize",
+        "fontFamily": "@AvenirLtLight"
+      }
+    },
+    "legend": {
+      "title": {
+        "color": "@TextColor",
+        "fontSize": "@TextSize",
+        "fontFamily": "@AvenirLtLight"
+      },
+      "label": {
+        "color": "@TextColor",
+        "fontSize": "@TextSize",
+        "fontFamily": "@AvenirLtLight"
+      }
+    }
+  },
+  "palettes": {
+    "data": [
+      {
+        "name": "WL palette 01",
+        "translation": "WL Palette 01",
+        "propertyValue": "0001dwl",
+        "type": "row",
+        "scale": [
+          "#232942",
+          "#475384",
+          "#7a86b7",
+          "#dde0ed",
+          "#0080C8",
+          "#FFED00",
+          "#A862A4",
+          "#008F95",
+          "#9D6830",
+          "#E6E6FA",
+          "#EF7C00",
+          "#008F95",
+          "#00963F",
+          "#D7D2CB",
+          "#FFD700"
+        ]
+      },
+      {
+        "name": "WL palette 02 (R)",
+        "translation": "WL Palette 02 (R)",
+        "propertyValue": "0002dwl",
+        "type": "row",
+        "scale": [
+          "#232942",
+          "#475384",
+          "#7a86b7",
+          "#dde0ed",
+          "#FFD700",
+          "#D7D2CB",
+          "#00963F",
+          "#008F95",
+          "#EF7C00",
+          "#E6E6FA",
+          "#9D6830",
+          "#008F95",
+          "#A862A4",
+          "#FFED00",
+          "#0080C8"
+        ]
+      } ,
+      {
+        "name": "WL palette 03",
+        "translation": "WL Palette 03",
+        "propertyValue": "0003dwl",
+        "type": "row",
+        "scale": [
+          "#232942",
+          "#475384",
+          "#7a86b7",
+          "#dde0ed",
+          "#1f1513",
+          "#9fbde4",
+          "#53698d",
+          "#fff466",
+          "#7fcaad",
+          "#9b2321",
+          "#efa400",
+          "#a862a4",
+          "#caa0c8",
+          "#553116",
+          "#ffdd00",
+          "#662282",
+          "#7fca9a",
+          "#e3000f",
+          "#f7d345",
+          "#00955b"
+        ]
+      },
+      {
+        "name": "WL palette 04 (R)",
+        "translation": "WL Palette 04",
+        "propertyValue": "0004rdwl",
+        "type": "row",
+        "scale": [
+          "#232942",
+          "#475384",
+          "#7a86b7",
+          "#dde0ed",
+          "#00955b",
+          "#f7d345",
+          "#e3000f",
+          "#7fca9a",
+          "#662282",
+          "#ffdd00",
+          "#553116",
+          "#caa0c8",
+          "#a862a4",
+          "#efa400",
+          "#9b2321",
+          "#7fcaad",
+          "#fff466",
+          "#53698d",
+          "#9fbde4",
+          "#1f1513"
+        ]
+      } 
+    ],
+    
+    "ui": [
+      {
+        "name": "WL color picker",
+        "colors": [
+          "@ColourWLBlue",
+        "@ColourWLBlueLight",
+          "#232942",
+          "#475384",
+          "#7a86b7",
+          "#dde0ed",
+          "@ColourWLRed",
+        "@ColourWLRedLight" 
+        ]
+      }
+    ]
+  },
+  "scales": [
+    {
+      "name": "WL gradients colors 01",
+      "translation": "WL palettes colors 02",
+      "type": "gradient",
+      "propertyValue": "gsrrx",
+      "scale": [
+        "#232942",
+        "#475384",
+        "#9ba4c9",
+        "#dde0ed"
+      ]
+    },
+    {
+      "name": "WL gradients colors 02",
+      "translation": "WL palettes colors 03",
+      "type": "gradient",
+      "propertyValue": "gzdxya",
+      "scale": [
+        "@ColourWLRed",
+        "@ColourWLBlue"
+      ]
+    },
+    {
+      "name": "WL gradients colors 03",
+      "translation": "WL palettes colors 03",
+      "type": "gradient",
+      "propertyValue": "gzdrxab",
+      "scale": [
+        "@ColourWLRed",
+        "@ColourWLRedLight"
+      ]
+    },
+    {
+      "name": "WL gradients colors 04",
+      "translation": "WL palettes colors 04",
+      "type": "gradient",
+      "propertyValue": "gzdrxcd",
+      "scale": [
+        "@ColourWLBlue",
+        "@ColourWLBlueLight"
+      ]
+    }
+  ]
+}

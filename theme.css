@@ -1,0 +1,53 @@
+.qvt-sheet {
+    background: transparent !important;
+}
+
+@font-face {
+    font-family: "Avenir LT W01_35 Light1475496";
+    src: url("fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir LT W01 65 Medium";
+    src: url("fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir LT W01 85 Heavy";
+    src: url("fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+ .sheet-title-container {
+    /*color: rgb(255, 255, 255) !important; /* Set text color to white */
+    /*font-weight: bold !important; /* Make text bold */
+    position: relative; /* Ensure the pseudo-element positions correctly */
+    font-family: "Avenir LT W01 65 Medium";
+} 
+
+#sheet-title.sheet-grid.logo-right .sheet-title-logo-img {
+    left: -90px !important;
+    position: relative;
+}
+
+.sheet-title-container::before {
+    content: "TLP Red"; /* The text you want to display */
+    position: absolute;
+    right: 80px; /* Adjust this value to move the text further right or left */
+    color: rgb(255, 255, 255); /* Ensure the text is white */
+    font-weight: 600; /* Make the text bold */
+    font-family: "Avenir LT W01_35 Light1475496";
+    font-size: 12px;
+    top: 12px;
+}
+
+#sheet-title .sheet-title-text {
+    flex: 1 1 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    font-family: "Avenir LT W01 65 Medium";
+}
