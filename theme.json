@@ -275,9 +275,43 @@
           "#9fbde4",
           "#1f1513"
         ]
-      } 
+      },
+      {
+        "name": "WL palette 05 (U-Bahn)",
+        "translation": "WL Palette 05 (U-Bahn)",
+        "propertyValue": "0005dwl",
+        "type": "row",
+        "scale": [
+          "#232942",
+          "#475384",
+          "#7a86b7",
+          "#dde0ed",
+          "#e30014",
+          "#a862a4",
+          "#ef7c00",
+          "#00963f",
+          "#008f95",
+          "#9d6830"
+        ]
+      },
+      {
+        "name": "WL palette 06 (PBI)",
+        "translation": "WL Palette 06 (PBI)",
+        "propertyValue": "0006dwl",
+        "type": "row",
+        "scale": [
+          "#000050",
+          "#518196",
+          "#99B7CC",
+          "#D4E5EF",
+          "#C7C7C7",
+          "#D20A11",
+          "#EB999B",
+          "#FDEDED"
+        ]
+      }
     ],
-    
+
     "ui": [
       {
         "name": "WL color picker",
