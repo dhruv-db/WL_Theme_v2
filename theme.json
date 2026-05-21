@@ -191,7 +191,6 @@
           "#9D6830",
           "#E6E6FA",
           "#EF7C00",
-          "#008F95",
           "#00963F",
           "#D7D2CB",
           "#FFD700"
@@ -214,12 +213,11 @@
           "#EF7C00",
           "#E6E6FA",
           "#9D6830",
-          "#008F95",
           "#A862A4",
           "#FFED00",
           "#0080C8"
         ]
-      } ,
+      },
       {
         "name": "WL palette 03",
         "translation": "WL Palette 03",
@@ -250,7 +248,7 @@
       },
       {
         "name": "WL palette 04 (R)",
-        "translation": "WL Palette 04",
+        "translation": "WL Palette 04 (R)",
         "propertyValue": "0004rdwl",
         "type": "row",
         "scale": [
@@ -317,13 +315,13 @@
         "name": "WL color picker",
         "colors": [
           "@ColourWLBlue",
-        "@ColourWLBlueLight",
+          "@ColourWLBlueLight",
           "#232942",
           "#475384",
           "#7a86b7",
           "#dde0ed",
           "@ColourWLRed",
-        "@ColourWLRedLight" 
+          "@ColourWLRedLight"
         ]
       }
     ]
@@ -331,7 +329,7 @@
   "scales": [
     {
       "name": "WL gradients colors 01",
-      "translation": "WL palettes colors 02",
+      "translation": "WL Gradients 01",
       "type": "gradient",
       "propertyValue": "gsrrx",
       "scale": [
@@ -343,7 +341,7 @@
     },
     {
       "name": "WL gradients colors 02",
-      "translation": "WL palettes colors 03",
+      "translation": "WL Gradients 02",
       "type": "gradient",
       "propertyValue": "gzdxya",
       "scale": [
@@ -353,7 +351,7 @@
     },
     {
       "name": "WL gradients colors 03",
-      "translation": "WL palettes colors 03",
+      "translation": "WL Gradients 03",
       "type": "gradient",
       "propertyValue": "gzdrxab",
       "scale": [
@@ -363,7 +361,7 @@
     },
     {
       "name": "WL gradients colors 04",
-      "translation": "WL palettes colors 04",
+      "translation": "WL Gradients 04",
       "type": "gradient",
       "propertyValue": "gzdrxcd",
       "scale": [
