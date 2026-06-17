@@ -191,6 +191,24 @@
         ]
       },
       {
+        "name": "WL palette 07 (no blue/grey)",
+        "translation": "WL Palette 07 (no blue/grey)",
+        "propertyValue": "0007dwl",
+        "type": "row",
+        "scale": [
+          "#68001F",
+          "#B3001B",
+          "#D35400",
+          "#F2B01E",
+          "#F3D9A4",
+          "#005F43",
+          "#7DA12F",
+          "#20B2A6",
+          "#F26A4B",
+          "#A1004F"
+        ]
+      },
+      {
         "name": "WL palette 01",
         "translation": "WL Palette 01",
         "propertyValue": "0001dwl",
@@ -306,24 +324,6 @@
           "#00963f",
           "#008f95",
           "#9d6830"
-        ]
-      },
-      {
-        "name": "WL palette 07 (no blue/grey)",
-        "translation": "WL Palette 07 (no blue/grey)",
-        "propertyValue": "0007dwl",
-        "type": "row",
-        "scale": [
-          "#68001F",
-          "#B3001B",
-          "#D35400",
-          "#F2B01E",
-          "#F3D9A4",
-          "#005F43",
-          "#7DA12F",
-          "#20B2A6",
-          "#F26A4B",
-          "#A1004F"
         ]
       }
     ],
