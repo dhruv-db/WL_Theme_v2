@@ -175,6 +175,22 @@
   "palettes": {
     "data": [
       {
+        "name": "WL palette 06 (PBI)",
+        "translation": "WL Palette 06 (PBI)",
+        "propertyValue": "0006dwl",
+        "type": "row",
+        "scale": [
+          "#000050",
+          "#518196",
+          "#99B7CC",
+          "#D4E5EF",
+          "#C7C7C7",
+          "#D20A11",
+          "#EB999B",
+          "#FDEDED"
+        ]
+      },
+      {
         "name": "WL palette 01",
         "translation": "WL Palette 01",
         "propertyValue": "0001dwl",
@@ -293,19 +309,21 @@
         ]
       },
       {
-        "name": "WL palette 06 (PBI)",
-        "translation": "WL Palette 06 (PBI)",
-        "propertyValue": "0006dwl",
+        "name": "WL palette 07 (no blue/grey)",
+        "translation": "WL Palette 07 (no blue/grey)",
+        "propertyValue": "0007dwl",
         "type": "row",
         "scale": [
-          "#000050",
-          "#518196",
-          "#99B7CC",
-          "#D4E5EF",
-          "#C7C7C7",
-          "#D20A11",
-          "#EB999B",
-          "#FDEDED"
+          "#68001F",
+          "#B3001B",
+          "#D35400",
+          "#F2B01E",
+          "#F3D9A4",
+          "#005F43",
+          "#7DA12F",
+          "#20B2A6",
+          "#F26A4B",
+          "#A1004F"
         ]
       }
     ],
