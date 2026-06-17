@@ -3,11 +3,46 @@
 # Uses master files from source folder (theme.css, theme.json, wl-tlp-red-v2.qext, fonts/)
 # Only swaps: label in CSS, gradient color in JSON, name in QEXT
 # =========================
+#
+# Usage:
+#   .\ThemeDuplicator.ps1            # defaults to Test
+#   .\ThemeDuplicator.ps1 -Target Test
+#   .\ThemeDuplicator.ps1 -Target Prod   # prompts for confirmation
+# =========================
+
+param(
+    [ValidateSet('Test','Prod')]
+    [string]$Target = 'Test'
+)
 
 # ---- CONFIG ----
-$masterRoot      = "C:\Users\wlqlikservice.Test\WL_Theme_v2"
-$destinationRoot = "\\swlall10\Daten\WLQlik\test\StaticContent\Extensions"
+# Per-target master source + destination share.
+#   Test = original/default behavior (unchanged).
+#   Prod paths follow the same naming convention as Test (test -> prod).
+#   >>> VERIFY the Prod paths below are correct before the first Prod run. <<<
+$targets = [ordered]@{
+    Test = @{
+        MasterRoot      = "C:\Users\wlqlikservice.Test\WL_Theme_v2"
+        DestinationRoot = "\\swlall10\Daten\WLQlik\test\StaticContent\Extensions"
+    }
+    Prod = @{
+        MasterRoot      = "C:\Users\wlqlikservice.Prod\WL_Theme_v2"
+        DestinationRoot = "\\swlall10\Daten\WLQlik\prod\StaticContent\Extensions"
+    }
+}
+
+$masterRoot      = $targets[$Target].MasterRoot
+$destinationRoot = $targets[$Target].DestinationRoot
 $fallbackRoot    = Join-Path $PSScriptRoot "GeneratedThemes"
+
+# Safety guard: require explicit confirmation for Prod.
+if ($Target -eq 'Prod') {
+    Write-Host "`n*** PROD DEPLOY ***" -ForegroundColor Red
+    Write-Host "  Master:      $masterRoot" -ForegroundColor Red
+    Write-Host "  Destination: $destinationRoot" -ForegroundColor Red
+    $confirm = Read-Host "Type PROD to continue (anything else aborts)"
+    if ($confirm -ne 'PROD') { Write-Host "Aborted." -ForegroundColor Yellow; exit 1 }
+}
 
 $themeDefs = [ordered]@{
     "wl-tlp-red-v2"          = @{ Label = "TLP Red";          Gradient = "#E24848" }
@@ -27,7 +62,7 @@ if (Test-Path -LiteralPath $destinationRoot) {
 }
 
 # ---- MAIN ----
-Write-Host "`n== Qlik TLP Theme Generator ==" -ForegroundColor Cyan
+Write-Host "`n== Qlik TLP Theme Generator [$Target] ==" -ForegroundColor Cyan
 Write-Host "Master source: $masterRoot`n" -ForegroundColor Gray
 
 foreach ($themeName in $themeDefs.Keys) {
@@ -84,4 +119,4 @@ foreach ($themeName in $themeDefs.Keys) {
     Write-Host "  zip:  $themeName.zip" -ForegroundColor Green
 }
 
-Write-Host "`nDone. 5 themes created in: $outputRoot" -ForegroundColor Cyan
+Write-Host "`nDone [$Target]. 5 themes created in: $outputRoot" -ForegroundColor Cyan
