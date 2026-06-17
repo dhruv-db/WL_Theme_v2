@@ -209,6 +209,17 @@
         ]
       },
       {
+        "name": "WL palette 08 (PBI no blue/grey)",
+        "translation": "WL Palette 08 (PBI no blue/grey)",
+        "propertyValue": "0008dwl",
+        "type": "row",
+        "scale": [
+          "#D20A11",
+          "#EB999B",
+          "#FDEDED"
+        ]
+      },
+      {
         "name": "WL palette 01",
         "translation": "WL Palette 01",
         "propertyValue": "0001dwl",
